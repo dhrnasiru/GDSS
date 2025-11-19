@@ -1,0 +1,44 @@
+ #deverloper{
+  font-family: sans-serif;
+  color: #777777;
+  line-height: 30px;
+}
+.purple-color {
+  color: #00f !important;
+  line-height: 40px;
+}
+.content {
+  width: 50%;
+  float: left;
+}
+.btn {
+  color: white;
+  background-color: #00e;
+  padding: 13px 60px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+.developer_container {
+  width: 100%;
+  height: auto;
+  margin: 20px;
+  display: inline-block;
+}
+@media (max-width: 600px){
+ .developer_content{
+   width:90%;
+
+ }
+  
+.developer_content img{
+  
+
+}
+  
+}
+
+#bo{
+  border: 10px solid transparent;
+  border-image: url(form1.jpg) 10 round;
+  padding: 20px
+}
