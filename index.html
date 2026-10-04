@@ -2,10 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Dahiru nasiru">
-    <title>GDSS SHUWARIN |class of 2025</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Dahiru Nasiru">
+
+    <meta name="description"
+        content="GDSS Shuwarin Class of 2025 – school memories, members, stories and records of Government Day Secondary School, Shuwarin.">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://dhrnasiru.github.io/GDSS/">
+
+    <title>GDSS Shuwarin – Class of 2025</title>
+
     <style>
         body {
             margin: 0;
@@ -23,7 +34,7 @@
             display: flex;
             justify-content: space-around;
             padding: 10px 0;
-            padding-bottom: 0px;
+            padding-bottom: 0;
             z-index: 999;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
@@ -59,17 +70,13 @@
 
         section.active {
             display: block;
-
         }
 
-        
         .members-container {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 20px;
             margin-top: 20px;
-          
-
         }
 
         .member-card {
@@ -79,7 +86,9 @@
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             height: 30px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease, height 5.5s ease;
+            transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                height 5.5s ease;
         }
 
         .member-card:hover {
@@ -111,7 +120,8 @@
             object-fit: cover;
             border-radius: 8px;
             border: 2px solid #ff54ed;
-            transition: width 0.5s ease-in, height 3.5s linear;
+            transition: width 0.5s ease-in,
+                height 3.5s linear;
         }
 
         .member-image img:hover {
@@ -120,7 +130,7 @@
         }
 
         .member-info {
-            flex-grow: ;
+            flex-grow: 1;
         }
 
         .member-info p {
@@ -141,12 +151,11 @@
         }
 
         .social-icons a {
-            display: inline-block;
+            display: inline-flex;
             width: 60px;
             height: 60px;
             background-color: #f0f0f0;
             border-radius: 50%;
-            display: flex;
             align-items: center;
             justify-content: center;
             transition: background 0.3s ease;
@@ -175,7 +184,6 @@
         #searchInput:focus {
             border-color: #ff54ed;
             outline: none;
-
         }
 
         #perfect ul {
@@ -191,6 +199,63 @@
             padding: 15px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Slider */
+        .slider_container {
+            padding: 5px;
+            margin: 10px;
+            border: 8px solid #ff54ed;
+            position: relative;
+            text-align: center;
+            height: 500px;
+            overflow-y: hidden;
+        }
+
+        #slider_button_holder {
+            border: 1px solid #ff54ed;
+            overflow: hidden;
+            width: 100%;
+            height: 30px;
+            justify-content: space-around;
+            display: flex;
+            flex-direction: row;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: #ff54ed;
+        }
+
+        .slider_button {
+            background: #f3f3f3;
+            height: 40px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            margin: 2px 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            border: none;
+            width: 40%;
+        }
+
+        .slider_container img {
+            height: auto;
+            width: 90%;
+            border: 8px double blue;
+            border-radius: 10px;
+        }
+
+        .member-content h3 {
+            text-align: center;
+        }
+
+        #members_header {
+            position: fixed;
+            margin-bottom: 30px;
+            padding-top: 2px;
+            margin-top: 0;
+            width: 92%;
+            background: #f5f5f5;
         }
 
         @media (max-width: 768px) {
@@ -217,73 +282,9 @@
                 padding: 70px 15px 15px;
             }
         }
-
-        /*  slider container */
-        .slider_container {
-            padding: 5px;
-            margin: 10px;
-            border: 8px solid #ff54ed;
-            position: relative;
-            text-align: center;
-            height: 500px;
-            overflow-y: hidden;
-        }
-
-        #slider_button_holder {
-            border: 1px solid #ff54ed;
-            overflow: hidden;
-            width: 100%;
-            height: 30px;
-            justify-content: space-around;
-            display: flex;
-            flex-direction: row;
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-            background: #ff54ed;
-        }
-
-        .slider_button {
-            background: #f3f3f3;
-            height: 40px;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            margin: 10px;
-            margin-bottom: 2px;
-            margin-top: 2px;
-            padding-left: 25px;
-            padding-right: 25px;
-            padding-top: ;
-            /* Na bar shi yadda kake so */
-            border: none;
-            width: 40%;
-        }
-
-        /* image selector */
-        .slider_container img {
-            height: auto;
-            width: 90%;
-            border: 8px double blue;
-            border-radius: 10px;
-        }
-
-        .member-content h3 {
-            text-align: center;
-
-        }
-
-        #members_header {
-            position: fixed;
-            margin-bottom: 30px;
-            padding-top: 2px;
-            margin-top: 0px;
-            width: 92%;
-            background: #f5f5f5;
-        }
-
-        #home {
     </style>
-   <link rel="stylesheet" href="A.portfolio.css">
+
+    <link rel="stylesheet" href="A.portfolio.css">
     <link rel="stylesheet" href="A.Gallery_style.css">
 </head>
 
@@ -299,34 +300,151 @@
 
     <!-- Home Section -->
     <section id="home" class="active">
-        <h1>Welcome to SHUWARIN 2025</h1>
-        <p>This page contains stories and records of our school life.</p>
+
+        <h1>GDSS Shuwarin – Class of 2025</h1>
+
+        <p>
+            Welcome to the official GDSS Shuwarin Class of 2025 website.
+            This website preserves the memories, members, stories and
+            records of Government Day Secondary School, Shuwarin.
+        </p>
+
         <br>
 
         <div class="gallery">
             <a target="_blank" href="form1.jpg">
-                <img src="form1.jpg" alt="Cinque Terre" width="600" height="400">
+                <img src="form1.jpg"
+                     alt="GDSS Shuwarin Class of 2025"
+                     width="600"
+                     height="400">
             </a>
-            <div class="desc">Add a description of the image here</div>
+            <div class="desc">
+                GDSS Shuwarin Class of 2025
+            </div>
         </div>
+
         <div class="gallery">
             <a target="_blank" href="form1.jpg">
-                <img src="form1.jpg" alt="Cinque Terre" width="600" height="400">
+                <img src="form1.jpg"
+                     alt="Government Day Secondary School Shuwarin"
+                     width="600"
+                     height="400">
             </a>
-            <div class="desc">Add a description of the image here</div>
+            <div class="desc">
+                Government Day Secondary School, Shuwarin
+            </div>
         </div>
 
         <br>
 
         <div class="slider_container">
-            <img id="slider" src="Screenshot_20250329-011950.png">
+
+            <img id="slider"
+                 src="Screenshot_20250329-011950.png"
+                 alt="GDSS Shuwarin Class of 2025">
+
             <br>
+
             <div id="slider_button_holder">
-                <button onclick="prev()" class="slider_button">prev</button>
-                <button onclick="next()" class="slider_button">next</button>
+                <button onclick="prev()" class="slider_button">
+                    Prev
+                </button>
+
+                <button onclick="next()" class="slider_button">
+                    Next
+                </button>
             </div>
+
         </div>
 
+    </section>
+
+    <!-- Members Section -->
+    <section id="members">
+
+        <div id="members_header">
+
+            <h1>GDSS Shuwarin Class of 2025 Members</h1>
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search member name..."
+                aria-label="Search GDSS Shuwarin members"
+            />
+
+        </div>
+
+        <br><br><br><br><br><br><br><br>
+
+        <!--
+            KA CI gaba da dukkan MEMBERS ɗinka daga
+            nan kamar yadda suke a tsohon index.html.
+        -->
+
+        <div class="members-container">
+
+            <div class="member-card" id="dahiru_nasiru">
+
+                <h2>Dahiru Nasiru</h2>
+
+                <div class="member-content">
+
+                    <div class="member-image">
+                        <img
+                            src="IMG_20241205_070114_952.jpg"
+                            alt="Dahiru Nasiru – GDSS Shuwarin Class of 2025"
+                        >
+                    </div>
+
+                    <div class="social-icons">
+
+                        <a href="#" aria-label="Facebook">
+                            <img src="Facebook.svg" alt="Facebook">
+                        </a>
+
+                        <a href="#" aria-label="Telegram">
+                            <img src="Telegram.svg" alt="Telegram">
+                        </a>
+
+                        <a
+                            href="https://wa.me/2348038628250"
+                            aria-label="WhatsApp"
+                        >
+                            <img src="bxl-whatsApp.svg" alt="WhatsApp">
+                        </a>
+
+                    </div>
+
+                    <div class="member-info">
+
+                        <p>
+                            <strong>Nickname:</strong>
+                            D.Network
+                        </p>
+
+                        <p>
+                            <strong>Rank:</strong>
+                            Head Student
+                        </p>
+
+                        <p>
+                            <strong>Department:</strong>
+                            Science
+                        </p>
+
+                        <p>
+                            <strong>Ambition:</strong>
+                            Software Developer
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        
 
 
 
